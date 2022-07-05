@@ -17,7 +17,8 @@ margin-right: 35%;
 border-style: hidden ;
 
 }
-
+@media screen and(min-width:375px)
+{.musical{margin-right-left:40%}}
 .logo{
     width: 100%;
     border-top-left-radius: 10px;
