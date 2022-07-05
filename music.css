@@ -1,8 +1,9 @@
 #project{
    background: url('pattern-background-desktop.svg') ;
     Font-size: 16px;
+    Background size:cover;
     font-family:'Red Hat Display';
-    background-color: yellowgreen;
+    background-color: hsl(225, 100%, 98%);
 }
 
 
