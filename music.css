@@ -2,6 +2,7 @@
    background: url('pattern-background-desktop.svg') ;
     Font-size: 16px;
     Background size:cover;
+    Height:100vh;
     font-family:'Red Hat Display';
     background-color: hsl(225, 100%, 98%);
 }
