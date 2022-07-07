@@ -4,28 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="css/music.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;863;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>,
 <body id="project">
  <main>
   <section class="musical">
 
      <nav >
-        <img src="illustration-hero.svg"class="logo" alt="illustration">
+        <img src="./images/illustration-hero.svg"class="logo" alt="illustration">
      </nav>
      <div class="head">
         <h1 class="order">Order Summary</h1>
@@ -35,16 +30,20 @@
       </div>
         
       <div class="option">
-          <img src="icon-music.svg" alt="music">
+          <img src="./images/icon-music.svg" alt="music">
            <h4 class="rate">
-            <ul>
-              <li id="plan">
-                annual plan
-              </li>
-              <li id="bill">
-                $59.99/year <span><button id="select" >change</button></span>
-              </li>
-            </ul>
+
+            <div id="plan">
+              annual plan
+            </div>
+
+            <div id="bill">
+              $59.99/year 
+              <button id="select">
+                change
+              </button>
+            </div>
+                
            </h4>
         </div>
         <div>
@@ -55,10 +54,6 @@
   
  </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ibrahim Hassan/@iambugzbunny</a>.
-  </div>
 
 </body>
 
