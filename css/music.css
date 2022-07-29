@@ -1,6 +1,7 @@
 #project{
-    background-image:url("pattern-background-desktop.svg");
-    Background-size:cover;
+    background-image:url("../images/pattern-background-desktop.svg");
+    height: 30%;
+    width: 100%;
     background-repeat:no-repeat;
     font-size:26px;
     font-family: 'Red Hat Display', sans-serif;
@@ -10,11 +11,11 @@
 
 .musical{background-color:hsl(225, 100%, 98%);
 border:1px solid black;
-max-width: 50%;
-border-radius:10px;
+width: 30%;
+border-radius:15px;
 margin-top: 30px;
 margin-bottom: 30px;
-margin-left: 32%;
+margin-left: 35%;
 margin-right: 32%;
 border-style: hidden ;
 
@@ -22,13 +23,13 @@ border-style: hidden ;
 
 .logo{
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
 }
 
 .order{
-    padding-left: 25%;
+    padding-left: 20%;
     padding-top: 20px;
     font-weight: 900;
     font-size: 30px;
@@ -48,17 +49,18 @@ border-style: hidden ;
 
 .option{
 display: flex;
-border: 1px solid black;
+border: none;
 background-color:hsl(225, 100%, 94%) ;
 align-items: center;
+justify-content: space-around;
 max-width: 80%;
 max-height:100px;
 border-radius: 10px;
 margin-left: 10%;
-border-style: hidden;
 }
 .option img{
-    padding-left:30px;   
+    width: 60px;
+    padding-left:10px;   
 }
 
 #plan{
@@ -67,7 +69,8 @@ font-size: 16px;
 font-weight: 700;
 font-family: 'Red Hat Display', sans-serif;
 text-transform: capitalize;
-padding-left: 25px;
+margin-top: 20px;
+padding-bottom: 5px;
 padding-top: 5px;
 }
 
@@ -77,37 +80,47 @@ padding-top: 5px;
     font-family: 'Red Hat Display', sans-serif;
     color: hsl(224, 23%, 55%);
     padding-top: 10px;
-    padding-left: 25px;
-    display: flex;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 #select{color:  hsl(245, 75%, 52%);
     text-decoration: underline;
-   text-align: right;
-   font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     cursor: pointer;
     font-size: 16px;
-    padding-left: 80px;
-    border: none;
+    padding-right: 10px;
+    margin-left: 30px;
+    margin-bottom:50px ;
     background-color:hsl(225, 100%, 94%) ;
     }
 
+    #select:hover{
+        opacity: 0.7;
+    }
+
     .next{
-        background-color:hsl(245, 75%, 52%) ;
+        background-color:hsl(245, 75%, 52%);
         font-size: 12px;
         font-weight: 500;
         font-family: 'Red Hat Display', sans-serif;
-        padding: 70px,40px;
         border-radius: 10px;
         margin-left: 10%;
         color: white;
+        margin-top: 20px;
+        padding: 15px 80px;
         width: 80%;
         border: none;
-        height: 55px;
+        text-decoration: none;
         cursor: pointer;
         text-align: center;
 
+    }
+
+    .next:hover{
+        opacity: 0.7;
     }
 
     .next{
@@ -116,19 +129,36 @@ padding-top: 5px;
     }
 
     .cancel{
-        background-color: hsl(225, 100%, 98%);;
-        border: none;
-        color: hsl(224, 23%, 55%);
+        color: hsl(223, 47%, 23%);
         padding:10px 32px;
-        font-weight: 500;
+        font-weight: 700;
         font-family: 'Red Hat Display', sans-serif;
         text-align: center;
         text-decoration: none;
-        margin-left: 35%;
+        margin-left: 32%;
         margin-bottom: 10px;
         display: inline-block;
         cursor: pointer;
         font-size: 12px;
+    }
 
+    @media(max-width:600px){
+        #project{
+            background-image:url("../images/pattern-background-mobile.svg");
+        }
 
+        .musical{
+            width: 90%;
+            margin: 60px 20px 0px 10px;
+
+        }
+
+        .quote{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .cancel{
+            margin-left: 30%;
+        }
     }
